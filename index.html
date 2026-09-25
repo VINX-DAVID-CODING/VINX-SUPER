@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="styles.css">
+   
+
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="navbar">
+
+            <a href="#" class="logo">
+                <span>V</span> Vinx Super Pose
+            </a>
+
+            <form id="searchForm" class="search">
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search products and services..."
+                >
+
+                <button type="submit">Search</button>
+            </form>
+
+            <div class="nav-buttons">
+                <button id="accountBtn">👤 Account</button>
+
+                <button id="cartBtn">
+                    🛒 Cart
+                    <b id="cartCount">0</b>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- CATEGORIES -->
+    <nav class="categories">
+
+        <button class="category active" data-category="All">
+            All
+        </button>
+
+        <button class="category" data-category="Phones">
+            📱 Phones
+        </button>
+
+        <button class="category" data-category="Computers">
+            💻 Computers
+        </button>
+
+        <button class="category" data-category="Fashion">
+            👕 Fashion
+        </button>
+
+        <button class="category" data-category="Home">
+            🏠 Home
+        </button>
+
+        <button class="category" data-category="Beauty">
+            ✨ Beauty
+        </button>
+
+        <button class="category" data-category="Services">
+            🛠 Services
+        </button>
+
+        <button class="category" data-category="Food">
+            🍔 Food
+        </button>
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p class="small-title">
+                WELCOME TO VINX SUPER POSE
+            </p>
+
+            <h1>
+                Buy smarter.
+                <span>Sell with confidence.</span>
+            </h1>
+
+            <p>
+                Discover products and services from trusted sellers.
+                Shop easily, quickly and safely.
+            </p>
+
+            <a href="#products" class="shop-button">
+                Start Shopping
+            </a>
+
+        </div>
+
+
+        <div class="security-card">
+
+            <div class="shield">
+                🛡️
+            </div>
+
+            <h2>Safer Marketplace</h2>
+
+            <p>
+                Seller checks, order verification and
+                scam-awareness features help make shopping safer.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRUST FEATURES -->
+    <section class="trust">
+
+        <div>
+            ⚡
+            <strong>Fast</strong>
+            <small>Lightweight website</small>
+        </div>
+
+        <div>
+            🔒
+            <strong>Safer</strong>
+            <small>Order verification</small>
+        </div>
+
+        <div>
+            📦
+            <strong>Reliable</strong>
+            <small>Order tracking ready</small>
+        </div>
+
+        <div>
+            ♿
+            <strong>Accessible</strong>
+            <small>Easy to use</small>
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <main id="products">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="small-title">EXPLORE</p>
+
+                <h2>
+                    Popular Products & Services
+                </h2>
+            </div>
+
+            <select id="sortSelect">
+
+                <option value="featured">
+                    Featured
+                </option>
+
+                <option value="low">
+                    Price: Low to High
+                </option>
+
+                <option value="high">
+                    Price: High to Low
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div id="productGrid" class="product-grid"></div>
+
+        <p id="emptyState" class="empty hidden">
+            No products found.
+        </p>
+
+    </main>
+
+
+    <!-- CART -->
+    <aside id="cartPanel" class="cart-panel">
+
+        <div class="cart-header">
+
+            <h2>Your Cart</h2>
+
+            <button id="closeCart">
+                ×
+            </button>
+
+        </div>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-total">
+
+            <span>Total</span>
+
+            <strong id="cartTotal">
+                ₦0
+            </strong>
+
+        </div>
+
+        <button id="checkoutBtn" class="checkout">
+            Proceed to Checkout
+        </button>
+
+    </aside>
+
+
+    <!-- MODAL -->
+    <div id="modal" class="modal hidden">
+
+        <div class="modal-box">
+
+            <button id="closeModal" class="modal-close">
+                ×
+            </button>
+
+            <div id="modalContent"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-container">
+
+            <div>
+                <h2>Vinx Super Pose</h2>
+
+                <p>
+                    A modern marketplace for products
+                    and services.
+                </p>
+            </div>
+
+
+            <div>
+                <h3>Marketplace</h3>
+
+                <a href="#products">Products</a>
+                <a href="#products">Services</a>
+                <a href="#">Become a Seller</a>
+            </div>
+
+
+            <div>
+                <h3>Safety</h3>
+
+                <a href="#">Buyer Protection</a>
+                <a href="#">Scam Awareness</a>
+                <a href="#">Report Seller</a>
+            </div>
+
+
+            <div>
+                <h3>Help</h3>
+
+                <a href="#">Contact</a>
+                <a href="#">Delivery</a>
+                <a href="#">Returns</a>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Vinx Super Pose
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+     <script src="scripts.js"></script>
+
+
+</body>
+</html>
